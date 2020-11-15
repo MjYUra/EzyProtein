@@ -112,11 +112,11 @@ def calculateg (model, mutation):
         re.readline()
         lines=re.readline(10000)
         result=lines.split("\t")[1]
-    tmp=glob.glob(path+'/tem/*')
+    tmp=glob.glob(path+'/tem/*.txt')
     for f in tmp:
         os.remove(f)
     
-    re=glob.glob(path+'/re/*')
+    re=glob.glob(path+'/re/*.txt')
     for x in re:
         os.remove(x)	
     return result;
